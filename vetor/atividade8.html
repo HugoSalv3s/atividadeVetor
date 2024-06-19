@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    
+<div id="final"></div>
+
+<script>
+let numero1
+let numero2
+
+const A = []
+const B = []
+const C = []
+const D = []
+
+
+for (let a = 0; a < 5 ; a++) {
+    numero1 = Number(prompt("Digite o primeiro número "))
+    A.push(numero1)
+    numero2 = Number(prompt("Digite o segundo número "))
+    B.push(numero2)
+    
+    let soma = (A[a] + B[a])
+    let multiplicacao = (A[a] * B[a])
+
+    
+    C.push(soma)
+    D.push(multiplicacao)
+
+
+
+for (let j = 0; j < C.length; j++) {
+    
+    
+for(let k = 0; k < C.length; k++){
+
+    if(C[j] > C[k]){
+
+        [C[j], C[k]] = [C[k], C[j]]
+
+    }
+
+        if(D[j] < D[k]){
+
+
+            [D[j], D[k]] = [D[k], D[j]]
+
+
+        }
+
+
+}
+
+
+
+
+}
+
+
+}
+
+
+
+document.getElementById("final").innerHTML = "Soma: "+ C + "<br>"  + "<br>" + "Multiplicação: " + D 
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

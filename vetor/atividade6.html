@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    
+
+<h1>Ordem de Numeros</h1>
+
+<div id="Final"></div>
+
+<script>
+
+let inserir
+const numero = []
+
+
+for (let k = 0; k < 3; k++) {
+    inserir = Number(prompt("Digite um numero"))
+    numero.push(inserir)
+    
+}
+
+for(i = 0; i < numero.length; i++){
+
+for (let j = i+1 ; j < numero.length; j++) {
+    
+    if(numero[i] > numero[j]){
+
+        [numero[i], numero[j]] = [numero[j], numero[i]]
+
+    }
+    
+}
+
+    }
+
+
+
+document.getElementById("Final").innerHTML = numero
+
+
+</script>
+
+
+</body>
+</html>

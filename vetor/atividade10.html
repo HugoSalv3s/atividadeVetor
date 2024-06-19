@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10 </title>
+</head>
+<body>
+    
+<div id="final"></div>
+
+<script>
+
+let resultado = ""
+let codigoproduto
+let nomeproduto
+let quantidadeproduto
+const codigos = []
+const produtos = []
+const quantidades =[]
+
+for (let i = 0; i < 3; i++) {
+    codigoproduto = Number(prompt("Digite o código do Produto"))
+    codigos.push(codigoproduto)
+    
+    nomeproduto = prompt("Nome do produto")
+    produtos.push(nomeproduto)
+    
+    quantidadeproduto = Number(prompt("Quantidade de Produtos"))
+    quantidades.push(quantidadeproduto)
+
+
+
+    for (let j = 0; j > quantidades; j++) {
+    for (let k = j; k > quantidades; k++) {
+        
+                
+        
+        if (quantidades[j] > quantidades[k]) {
+            
+            [codigos[j], produtos[j], quantidades[j],codigos[k], produtos[k], quantidades[k]] = [codigos[k], produtos[k], quantidades[k], codigos[j], produtos[j], quantidades[j]]
+
+
+        }
+        
+
+        
+
+
+
+    }
+    
+}
+
+
+
+
+}
+
+resultado += "<br><br>Código do Produto: " + codigos
+        resultado += "<br>Nome do Produto: " + produtos
+        resultado += "<br>Quantidade: " + quantidades
+
+
+document.getElementById("final").innerHTML += resultado
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

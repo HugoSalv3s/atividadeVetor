@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+<body>
+
+    <h1>Lista de numeros</h1>
+    <div id="final"></div>
+
+
+
+
+    <script>
+        
+        let numero
+        const numeros = []
+        let nao = 0
+
+        let fim = (prompt("Deseja cadastrar um novo numero? \n Digite 1 para continuar e 2 para finalizar"))
+
+
+
+
+
+        while(fim == "1" ){
+
+            numero = (prompt("Digite o número:"))
+
+            for(numero= 6; numero>= numeros.length ; numero--){
+                if(numeros[i] >= numero){
+                nao++
+            
+            }
+            else{
+                numeros.push(numero)
+            }
+
+            fim = (prompt("Deseja cadastrar uma novo numero? \n Digite 1 para continuar e 2 para finalizar"))
+
+        }
+        }
+    
+
+
+
+        document.getElementById("Numeros").innerHTML = numeros
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

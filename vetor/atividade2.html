@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+<body>
+
+    <h1>Lista de numeros em reverso</h1>
+    <div id="Numero"></div>
+
+
+    <script>
+
+        let numero 
+        const  numeros = []
+        const contrario = []
+        let a = 0
+        let b = 3
+                
+       // numero = prompt("Digite um numero")
+
+
+                for (let i = 0; i < 3; i++) {
+                    numero = Number(prompt("Digite um numero"))
+                    numeros.push(numero)
+                    a++
+                    
+                    if(a == 3){
+                        for(i = 0; i < 3; i++){
+                            b--
+                        contrario.push(numeros[b])
+
+                    }
+                 
+                    }
+                   
+                    
+                }
+
+                document.getElementById("Numero").innerHTML = contrario
+
+      
+                
+            
+
+      
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

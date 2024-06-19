@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+   
+<div id="final"></div>
+ 
+<script>
+ 
+let numero
+let opcao
+let resultado = ""
+let a = 0
+ 
+const numeros = []
+const opcoes = []
+const errou = []
+ 
+ 
+for (let i = 0; i < 3; i++) {
+    numero = Number(prompt("Digite o Números"))
+    numeros.push(numero)    
+       
+console.log(numeros);
+ 
+ 
+    if (i == 2) {
+       
+        for (let j = 0; j < 3; j++) {
+           
+            opcao = prompt("Tente adivinhar os números na array")
+           
+            for (let k = 0; k < 1; k++) {
+               
+ 
+                    if (numeros[k] == opcao ) {
+                           
+                        opcoes.push = (opcao + " Este numero está na array ")
+                       
+                    } else{
+                        errou.push(opcao + " Este numero não esta na array ")
+                        
+                    }
+                    }
+ 
+                   
+               
+            }
+           
+        }
+ 
+ 
+ 
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+document.getElementById("final").innerHTML =  opcoes + "<br>" + errou
+ 
+ 
+ 
+ 
+</script>
+ 
+ 
+</body>
+</html>

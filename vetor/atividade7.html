@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    
+<div id="Final"></div>
+
+<script>
+    
+let numero
+const multi = []
+const decrescente = []
+
+for (let i = 0; i < 3; i++) {
+    numero = Number(prompt("Digite um numero"))
+        
+    multi.push(numero * 7)
+    decrescente.push(numero)
+
+for (let j = 0; j < multi.length; j++) {
+    
+    for (let k = 0; k < multi.length; k++) {
+    
+        if(multi[j] > multi[k]){
+
+        [multi[j], multi[k]] = [multi[k], multi[j]]
+
+        
+        if(decrescente[j] > decrescente[k]){
+
+        [decrescente[j], decrescente[k]] = [decrescente[k], decrescente[j]]
+
+
+
+        }
+        
+}
+    }
+document.getElementById("Final").innerHTML = decrescente + "<br>" + "<br>" + multi
+
+    
+}
+
+}
+
+
+</script>
+
+
+</body>
+</html>

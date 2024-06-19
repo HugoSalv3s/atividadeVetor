@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    
+<div id="final"></div>
+
+<script>
+
+let professor
+let tempoprofissao
+const  professores = []
+const tempoprofissoes = []
+
+for (let i = 0; i < 3; i++) {
+    professor = prompt("Digite o nome do professor ")
+    professores.push(professor)
+
+    tempoprofissao = Number(prompt("Digite o tempo de profissão"))
+    tempoprofissoes.push(tempoprofissao)
+} 
+    for (let l = 0; l < tempoprofissoes.length; l++) {
+  for (let m = l ; m < tempoprofissoes.length; m++) {
+
+      if (tempoprofissoes[l] < tempoprofissoes[m]) {
+        [professores[l], tempoprofissoes[l], professores[m],tempoprofissoes[m]] = [professores[m], tempoprofissoes[m],professores[l],tempoprofissoes[l]];
+
+    }
+  }
+}
+
+
+
+
+
+
+document.getElementById("final").innerHTML = "Nome dos professores: " + professores + "<br>"+ "<br>"+ "Tempo de profissão: " + tempoprofissoes + "<br>" + "<br>"
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
